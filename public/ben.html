@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SAY YOUR NAME</title>
+  <link rel="stylesheet" href="bijo.css" />
+</head>
+<body>
+  <div id="slide1" class="slideshow-layer top"></div>
+  <div id="slide2" class="slideshow-layer"></div>
+  <div class="overlay">
+    <div class="popup">
+      <h2>WHAT'S YOUR NAME NIGGA!☠️</h2>
+      <input type="text" id="nameInput" placeholder="Enter your name..." maxlength="20" />
+      <button id="joinBtn">Join Chat</button>
+    </div>
+  </div>
+  <div id="app" class="hidden">
+    <header class="topbar">
+      <h1 id="heading" class="glow-text">CHAT FOR FUN NOT FOR GUN🌛❤️</h1>
+
+      <div class="menuWrap">
+        <button id="menuDots" class="threeDots">⋮</button>
+        <div id="menuPopup" class="menuPopup hidden">
+          <button id="createRoom" class="menuItem">👻 Create Room</button>
+          <button id="joinRoom" class="menuItem">🔑 Join Room</button>
+          <button id="toggleMusic" class="menuItem">🎵 Music: OFF</button>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <aside class="sidebar">
+        <h3>Active Users 👥</h3>
+        <ul id="membersList"></ul>
+      </aside>
+      <section class="chatColumn">
+        <div class="messages"></div>
+        <div class="typingIndicator"></div>
+
+        <div class="inputBar">
+  <input id="messageInput" type="text" placeholder="Type a message..." autocomplete="off" />
+  <button id="actionBtn" class="mic">🎤</button>
+</div>
+          <button id="leaveRoom"
+            class="hidden"
+            style="position: absolute; left: 18px; bottom: 18px; z-index:50;">
+            🚪 Leave Room
+   </div>
+      </section>
+    </div>
+  </div>
+  <audio id="bgMusic" preload="auto"></audio>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="reby.js"></script>
+</body>
+</html>
