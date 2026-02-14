@@ -15,7 +15,7 @@ html, body {
 }
 
 body {
-  background: url("https://files.catbox.moe/3jvej7.jpg") center/cover fixed no-repeat;
+background: url("./images/bg-global.jpg") center/cover fixed no-repeat;
   color: #fff;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
