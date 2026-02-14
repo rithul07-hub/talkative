@@ -1,7 +1,5 @@
 console.log('reby.js loaded');
 const socket = io();
-
-// ------------------- ELEMENTS -------------------
 const nameInput = document.getElementById('nameInput');
 const joinBtn = document.getElementById('joinBtn');
 const app = document.getElementById('app');
@@ -21,8 +19,6 @@ const actionBtn = document.getElementById("actionBtn");
 let mediaRecorder;
 let audioChunks = [];
 let recording = false;
-
-// ------------------- MUSIC -------------------
 const playlist = ["https://files.catbox.moe/6ywqzp.mp4","https://files.catbox.moe/hjv93p.mp4"];
 let currentTrack = 0;
 let musicEnabled = true;
@@ -45,17 +41,17 @@ if (toggleMusicBtn) {
     if (musicEnabled && currentRoom !== 'global') startMusic(); else stopMusic();
   });
 }
-
-// ------------------- SLIDESHOW -------------------
 const privateImages = [
-  "https://files.catbox.moe/o0pz80.jpg",
-  "https://files.catbox.moe/4qh6us.jpg",
-  "https://files.catbox.moe/kgw098.jpg",
-  "https://files.catbox.moe/fsu3vn.jpg",
-  "https://files.catbox.moe/zfxeiw.jpg",
-  "https://files.catbox.moe/8no4gd.jpg",
-  "https://files.catbox.moe/8ejol5.jpg",
+  "./images/slider1.jpg",
+  "./images/slider2.jpg",
+  "./images/slide33.jpg",
+  "./images/slide44.jpg",
+  "./images/slide55.jpg",
+  "./images/slider6.jpg",
+  "./images/slider7.jpg",
+  "./images/slider8.jpg",
 ];
+
 let slideIndex = 0, slideInterval = null, showingA = true;
 const slideA = document.getElementById("slide1");
 const slideB = document.getElementById("slide2");
@@ -347,4 +343,5 @@ socket.on('roomJoined', (code) => {
 
 socket.on('clearChat', () => { messagesDiv.innerHTML = ''; });
 socket.on('debug', (m) => console.log('[debug]', m));
+
 socket.on('connect_error', (err) => console.error('connect_error', err));
