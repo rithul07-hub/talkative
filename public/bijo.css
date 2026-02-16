@@ -281,6 +281,7 @@ background: url("./images/bg-global.jpg") center/cover fixed no-repeat;
   position: relative;
 }
 
+
 .inputBar input {
   flex: 1;
   padding: 12px;
@@ -339,25 +340,27 @@ background: url("./images/bg-global.jpg") center/cover fixed no-repeat;
     padding-bottom: calc(var(--mobile-input-height, 70px) + 20px) !important;
     overflow-y: auto !important;
   }
-  .inputBar {
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 12px !important;
-    position: fixed !important;
-    z-index: 99999; /* above most stuff */
-    backdrop-filter: blur(8px);
-    background: rgba(0,0,0,0.55);
-    --mobile-input-height: 70px; 
+ .inputBar {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 12px !important;
+  position: fixed !important;
+  z-index: 99999;
+  backdrop-filter: blur(8px);
+  background: rgba(0,0,0,0.55);
+  --mobile-input-height: 70px; 
+}
 
-  .inputBar input {
-    padding: 12px !important;
-  }
+.inputBar input {
+  padding: 12px !important;
+}
 
-  .inputBar button {
-    width: 46px !important;
-    height: 46px !important;
-  }
+.inputBar button {
+  width: 46px !important;
+  height: 46px !important;
+}
+
 
   #leaveRoom {
     bottom: 80px !important;
