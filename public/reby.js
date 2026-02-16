@@ -42,14 +42,14 @@ if (toggleMusicBtn) {
   });
 }
 const privateImages = [
-  "./images/slider1.jpg",
-  "./images/slider2.jpg",
-  "./images/slide33.jpg",
-  "./images/slide44.jpg",
-  "./images/slide55.jpg",
-  "./images/slider6.jpg",
-  "./images/slider7.jpg",
-  "./images/slider8.jpg",
+  "/images/slider1.jpg",
+  "/images/slider2.jpg",
+  "/images/slider3.jpg",
+  "/images/slider4.jpg",
+  "/images/slider5.jpg",
+  "/images/slider6.jpg",
+  "/images/slider7.jpg",
+  "/images/slider8.jpg",
 ];
 
 let slideIndex = 0, slideInterval = null, showingA = true;
